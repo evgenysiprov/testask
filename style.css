@@ -1,0 +1,170 @@
+.top-menu {
+            position: relative;
+            background: rgba(34,34,34,0.4);
+        }
+h1 {
+    font-size: 18pt;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h3, span {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.menu-main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.left-item {float: left;}
+.right-item {
+    float: right;
+    display: none;
+}
+.menu-main a {
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+    padding: 0 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+    transition: .3s linear;
+}
+.menu-main a:hover {background: rgba(0,0,0,0.2);}
+
+
+
+.container {
+    width: 100%;
+}
+.content{
+    width: 100%;
+    max-width: 600px;
+    /*height: 100px;*/
+    margin: 0 auto;
+    background-color: #f7f7f7;
+}
+.bio {
+    display: table;
+    padding: 15px;
+}
+.bio-photo {
+    display: table-cell;
+    height: 260px;
+    width: 190px;
+    background-color: darkcyan;
+}
+.bio-info {
+    display: table-cell;
+    padding-left: 15px;
+    text-align:justify;
+}
+.school {
+
+}
+.school-menu {
+    background-color: #ED0000;
+    height: 15px;
+}
+.element-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+    line-height: 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: white;
+    transition: .3s linear;
+}
+.school-info {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translate(0, -100%);
+
+    background-color: beige;
+}
+.school-info.show {
+    visibility: visible;
+    opacity: 1;
+}
+button.accordion {
+    background: rgba(34,34,34,.4);
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.6s;
+    margin-bottom: 5px;
+}
+button.accordion.active,
+button.accordion:hover {
+    background: rgba(0,0,0,0.2)
+}
+div.info {
+    display: none;
+
+}
+div.info.show {
+    display: block;
+    padding-left: 5px;
+}
+@media (max-width: 430px) {
+    .menu-main {
+        width: 96%;
+        position: fixed;
+        background: rgba(34,34,34,.4);
+        z-index: 111;
+        margin-bottom: 13px;
+        top:0px;
+
+    }
+    .menu-main a {
+        text-decoration: none;
+        display: block;
+        line-height: 20px;
+        padding: 0 5px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-family: 'Arimo', sans-serif;
+        font-weight: bold;
+        color: white;
+        transition: .3s linear;
+
+    }
+    .menu-main li {display: block;}
+    h1 {
+        font-size: 14pt;
+    }
+    .bio {
+        top: 15px;
+        display: block;
+        position: relative;
+
+    }
+    .bio-photo {
+        display: block;
+        width: 100%;
+    }
+    .bio-info {
+        display: block;
+        text-align:justify;
+        position: relative;
+    }
+
+}
